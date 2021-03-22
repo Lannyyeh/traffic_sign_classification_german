@@ -1,11 +1,14 @@
 # Udacity Self-Driving Car Engineer Nanodegree
 ## Traffic Sign Recognition using Deep Learning
 
+<<<<<<< HEAD
 ### 2021.3.20 Modified by Lannyyeh
 * Modified line 200 in `traffic_sign.py`, referred to [this issue](https://github.com/tflearn/tflearn/issues/639)
 * Modified line 416 in `traffic_sign.py` to make it a comment, thus the training process would be skipped and use the model that already exist directly.
 
 
+=======
+>>>>>>> cb54a01ab80661a22cfb9e6f29775a92cb4bfdf5
 ### Overview
 
 This project creates and trains a deep convolutional neural network from scratch, with the task of classifying German traffic signs using the [German Traffic Sign Dataset](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset). The trained model is subsequently tested on German traffic signs found on the web, as well as US traffic signs.

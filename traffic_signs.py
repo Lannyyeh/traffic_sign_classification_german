@@ -197,7 +197,11 @@ def neural_network():
 		logits = net
 
 		# Loss (data loss and regularization loss) and optimizer
+<<<<<<< HEAD
 		loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=logits, labels=y))
+=======
+		loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits, y))
+>>>>>>> cb54a01ab80661a22cfb9e6f29775a92cb4bfdf5
 		optimizer = OPT.minimize(loss)
 
 		# Prediction (used during inference)
@@ -413,10 +417,17 @@ def run_inference(image_files):
 
 
 if __name__ == '__main__':
+<<<<<<< HEAD
 	#test_acc, accuracy_history = run_training()
 
 	# Obtain list of sample image files
 	sample_images = ['sample_right/' + image_file for image_file in os.listdir('sample_right')]
+=======
+	test_acc, accuracy_history = run_training()
+
+	# Obtain list of sample image files
+	sample_images = ['sample_images/' + image_file for image_file in os.listdir('sample_images')]
+>>>>>>> cb54a01ab80661a22cfb9e6f29775a92cb4bfdf5
 	preds = run_inference(sample_images)
 	print('Predictions on sample images:')
 	for i in range(len(sample_images)):
